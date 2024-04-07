@@ -25,6 +25,7 @@ from bs4 import BeautifulSoup
 import win32com.client as wincl
 from urllib.request import urlopen
 import pyaudio
+import webbrowser
 
 
 engin = pyttsx3.init("sapi5")
@@ -226,3 +227,15 @@ if __name__ =="__main__":
 
         elif "i love you" in query:
             speak("love? it will kill you never fell in love with someone sir.")
+        
+        elif "give me your code" in query:
+            speak("it's not possible.the next time you will be dead if you ask.")
+            
+        elif "open chrome" in query:
+            speak("here you go.")
+            os.system('start chrome {}'.format("https://www.google.com"))
+
+        elif "what can you do" in query:
+            speak("i can help you with different things you must order me what to do then i will do that for you.")
+            
+        
